@@ -1,0 +1,28 @@
+<html>
+<body>
+<div class="clock"></div>
+<style>
+    body {
+font-family: Arial, sans-serif;
+font-weight: bold;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: #282c34;
+color: #61dafb;
+margin: 0;
+}
+.clock {
+font-size: 3rem;
+}
+</style>
+<script>
+    const clock = document.querySelector('.clock');
+setInterval(() => {
+const now = new Date();
+clock.textContent = now.toLocaleTimeString();
+}, 1000);
+</script>
+</body>
+</html>
